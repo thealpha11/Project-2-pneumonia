@@ -1,0 +1,15 @@
+
+#main{
+    height:500px;
+    margin-top:200px;
+    margin-left:200px;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+#sub
+  {
+      position:relative;
+
+  }
+

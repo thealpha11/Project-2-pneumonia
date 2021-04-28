@@ -1,0 +1,50 @@
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>Pneumonia</title>
+    </head>
+    <body style="background-color: rgb(135, 209, 222);">
+        <a href="/back" class="btn btn-info">home</a>
+        
+      <h1><b>RESULTS OF PNEMOUNIA DETECTION FROM XRAY IMAGES</b></h1>  
+      <img src="/media/images/{{result.1}}"  class="responsive" widht="200" height="200"> 
+
+           
+            
+            <div id="main" class="jumbotron"> 
+               
+              
+                <h3 class='text1'><b>Resnet 50 model:</b></h3>
+                <h4 class='text1'>Uploaded x-ray image is classified as<br> pnemounia:<u class="under">{{result.0}}</u></h4> 
+                <h4 class='text1'>  loss{{result.3}}</h4>
+                <h4 class='text1'>  accuracy:{{result.4}}</h4>
+                <h4 class='text1'>  precision:{{result.5}}</h4>
+                <h4 class='text1'>  recall:{{result.6}}</h4>
+                <br>
+                
+                <h3 class='text1'><b>Inceptionv3 model:</b></h3>
+                <h4 class='text1'>Uploaded x-ray image is classified as<br> pnemounia:<u class="under">{{result.2}}</u></h4>
+                <h4 class='text1'>  loss{{result.7}}</h4>
+                <h4 class='text1'>  accuracy:{{result.8}}</h4>
+                <h4 class='text1'>  precision:{{result.9}}</h4>
+                <h4 class='text1'>  recall:{{result.10}}</h4>
+
+                
+            
+                
+            </div>
+            </body>
+  
+   
+    </html>
+   

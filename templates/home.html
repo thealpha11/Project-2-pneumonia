@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>allissues</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+
+<body style="background-color: rgb(64, 139, 158);">
+
+<h1><b>PNEMOUNIA DETECTION WITH X RAYS IMAGES USING INCEPTION V3 AND RESNET 50</b></h1>
+
+<div id="main" class="jumbotron">
+<form class="" enctype="multipart/form-data" method="post" action='image_upload'>
+          {% csrf_token %}
+
+<div id="sub">	
+  
+accepted type(x rays images):<input type="file" name="xray">
+<img src="{% static 'bg.jpeg' %}" width="400" height="400"/>
+<br>
+<br>
+<br>
+<input type="submit" >
+</div>
+</div>
+</form>
+</body>
+</html>
